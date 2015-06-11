@@ -1,0 +1,23 @@
+section(class="Layout")
+        section(class="Layout-angonist") 
+            each Card in [1,2,3,4,5]
+                include ../Card/template.jade
+        section(class="Layout-main")
+            div(class="Layout-status") 
+                each  name in ["Computor","Andres"]
+                    include ../Status/template.jade
+            div(class="Layout-battle")
+                div(class="Battle")
+                    div(class="Battle-angonist")
+                        each Card in [1,2,3,4,5]
+                            include ../Card/template.jade
+                    div(class="Battle-player")
+                        each Card in [1,2,3,4,5]
+                            include ../Card/template.jade
+            div(class="Layout-phases") 
+                div(class="Phases")
+                    - text = "OMG ese ataque es un fuerte,le quitaste 300p"
+                    include ../Phases/template.jade
+        section(class="Layout-player")
+            each Card in [1,2,3,4,5]
+                include ../Card/template.jade

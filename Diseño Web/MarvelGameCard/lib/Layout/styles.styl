@@ -1,0 +1,35 @@
+.Layout 
+    display flex
+    padding .5em
+    flex-direction column
+    min-height 100vh;
+    justify-content space-between
+    background-image url('../img/city.jpg')
+    background-size cover
+    test(brown)
+    > section
+        margin .5em
+    &-main
+        display flex
+        justify-content space-between
+    &-status
+        test(green)
+        width 200px
+    &-battle
+        test(orange)
+        flex 1
+        margin 0 .5em
+        background-image url('../img/pattern.jpg')
+        
+    &-phases
+        test(purple)
+        width 200px
+        position relative
+    &-angonist
+        test(aquamarine)
+        display flex
+        justify-content space-between
+    &-player
+        test(red)
+        display flex
+        justify-content space-between
