@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+
+#fondosport {
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+		}
+#menu {
+	height: 700px;
+	width: 1024px;
+	z-index: 10;
+	position: absolute;
+	padding: 0px;
+    display: none;
+}
+#menu-mostrar {
+	height: 700px;
+	width: 1024px;
+	z-index: 9;
+	position: absolute;
+	padding: 0px;
+}
+#boton-imprimir {
+	height: 576px;
+	width: 1024px;
+	z-index: 20;
+	position: absolute;
+	top: 600px;
+}
+
+#rueda-delantera {
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+
+#neumatico-delantero {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#horquilla {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#rueda-trasera {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}#lenticular-trasera {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 2;
+	position: absolute;
+}
+#neumatico-trasero {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#cuadrosportnegro {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#biela {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#plato {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#cadena {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#tija {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#sillin {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#potencia {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+#manillar {
+
+	height: 576px;
+	width: 1024px;
+	z-index: 1;
+	position: absolute;
+}
+.imprimir {
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+}
+.version-movil{
+	color: #000;
+    
+}
+.version-movil:hover{
+	color: #000;
+    border-bottom: 2px solid #a00138;
+}
+
+
+@media print {
+#parte1 {display:none;}
+#parte2 {display:none;}
+}

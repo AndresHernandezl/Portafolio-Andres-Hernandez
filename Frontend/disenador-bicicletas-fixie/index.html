@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>JuanFixed.com - Diseña tu Fixicleta</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="menu_files/css3menu1/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="js/jquery-2.1.3s.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+        <script>
+
+function muestra_oculta(id){
+    if (document.getElementById){ //se obtiene el id
+        var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+        el.style.display = (el.style.display == 'block') ? 'none' : 'block'; //damos un atributo display:none que oculta el div
+    }
+}
+/*window.onload = function(){hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+{muestra_oculta('menu');/* "contenido_a_mostrar" es el nombre de la etiqueta DIV que deseamos mostrar */
+}
+    </script>
+        <script type="text/javascript">
+function cargaImagenes() { //v3.0
+    var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+                                 var i,j=d.MM_p.length,a=cargaImagenes.arguments; for(i=0; i
+            <a.length; i++)
+                                     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+    var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+    if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i
+                <d.forms.length;i++) x=d.forms[i][n];
+    for(i=0;!x&&d.layers&&i
+                    <d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+    if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function mostrarImagen() { //v3.0
+    var i,j=0,x,a=mostrarImagen.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+        if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_changeProp(objId,x,theProp,theValue) { //v9.0
+    var obj = null; with (document){ if (getElementById)
+        obj = getElementById(objId); }
+    if (obj){
+        if (theValue == true || theValue == false)
+            eval("obj.style."+theProp+"="+theValue);
+        else eval("obj.style."+theProp+"='"+theValue+"'");
+    }
+}
+
+    
+                    </script>
+                </head>
+                <body onload="cargaImagenes('imagenes/sillin/azul.png','imagenes/sillin/rojo.png','imagenes/sillin/naranja.png','imagenes/sillin/verde.png','imagenes/sillin/blanco.png','imagenes/sillin/marron.png','imagenes/sillin/rosa.png','imagenes/sillin/lima.png','imagenes/sillin/amarillo.png','imagenes/sillin/morado.png','imagenes/sillin/negro.png','imagenes/manillar/rojo.png','imagenes/manillar/verde.png','imagenes/cadena/rojo.png','imagenes/cadena/verde.png','imagenes/tija/azul.png','imagenes/tija/rojo.png','imagenes/tija/naranja.png','imagenes/tija/verde.png','imagenes/tija/blanco.png','imagenes/tija/dorado.png','imagenes/tija/morado.png','imagenes/tija/negro.png','imagenes/tija/cromado.png'">
+                    <div id="Fixed">
+                        <div class="fondosport" id="fondosport">
+                            <img src="imagenes/fondo-sport.png" width="1024" height="576" name="fondosport" />
+                        </div>
+                        <div class="rueda-delantera" id="rueda-delantera">
+                            <img src="imagenes/rueda-delantera/40/blanco.png" name="ruedadelnegra" width="1024" height="576" id="ruedadelnegra" />
+                        </div>
+                        <div class="lenticular-trasera" id="lenticular-trasera">
+                            <img src="imagenes/lenticular/sin.png" name="lenticularnegra" width="1024" height="576" id="lenticularnegra" />
+                        </div>
+                        <div class="neumatico-delantero" id="neumatico-delantero">
+                            <img src="imagenes/neumatico-delantero/negro.png" width="1024" height="576"  name="neumaticodelanteronegro"/>
+                        </div>
+                        <div class="horquilla" id="horquilla">
+                            <img src="imagenes/horquilla/sport/rojo.png" width="1024" height="576" name="horquillasportnegro" />
+                        </div>
+                        <div class="rueda-trasera" id="rueda-trasera">
+                            <img src="imagenes/rueda-trasera/40/blanco.png" width="1024" height="576" name="ruedatrasnegra" />
+                        </div>
+                        <div class="neumatico-trasero" id="neumatico-trasero">
+                            <img src="imagenes/neumatico-trasero/negro.png" width="1024" height="576" name="neumaticotraseronegro" />
+                        </div>
+                        <div class="tija" id="tija">
+                            <img src="imagenes/tija/negro.png" name="tijanegro" width="1024" height="576" id="tijanegro" />
+                        </div>
+                        <div class="cuadrosportnegro" id="cuadrosportnegro">
+                            <img src="imagenes/cuadro/sport/rojo.png" name="cuadrosportnegro" width="1024" height="576" />
+                        </div>
+                        <div class="biela" id="biela">
+                            <img src="imagenes/biela/negro.png" name="bielanegro" width="1024" height="576" id="bielanegro" />
+                        </div>
+                        <div class="plato" id="plato">
+                            <img src="imagenes/plato/negro.png" name="platonegro" width="1024" height="576" id="platonegro" />
+                        </div>
+                        <div class="cadena" id="cadena">
+                            <img src="imagenes/cadena/negro.png" name="cadenanegra" width="1024" height="576" />
+                        </div>
+                        <div class="sillin" id="sillin">
+                            <img src="imagenes/sillin/negro.png"  name="sillinnegro"width="1024" height="576" />
+                        </div>
+                        <div class="potencia" id="potencia">
+                            <img src="imagenes/potencia/negro.png" width="1024" height="576" name="potencianegro" />
+                        </div>
+                        <div class="manillar" id="manillar">
+                            <img src="imagenes/manillar/pista/negro.png" name="manillarpistanegro" width="1024" height="576" />
+                        </div>
+                    </div>
+                    <div class="menu" id="menu">
+                        <ul id="css3menu1" class="topmenu">
+                            <li class="topfirst">
+                                <a href="#" style="width:110px;">
+                                    <span>Cuadro</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>Sport</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/amarillo.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Amarillo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/azul-claro.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Azul Claro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/azul.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Azul</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/blanco.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Blanco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/gris.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Gris</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/lima.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Lima</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/marron.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Marrón</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/morado.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Morado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/naranja.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Naranja</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/negro.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Negro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/rojo.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Rojo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/rosa.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Rosa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/sport/verde.png',1);mostrarImagen('fondosport','','imagenes/fondo-sport.png',1)">Verde</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Clásico</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/amarillo.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Amarillo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/azul-claro.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Azul Claro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/azul.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Azul</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/blanco.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Blanco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/gris.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Gris</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/lima.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Lima</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/marron.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Marrón</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/morado.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Morado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/naranja.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Naranja</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/negro.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Negro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/rojo.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Rojo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/rosa.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Rosa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('cuadrosportnegro','','imagenes/cuadro/clasico/verde.png',1);mostrarImagen('fondosport','','imagenes/fondo-clasica.png',1)">Verde</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Horquilla</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>Recta</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/amarillo.png',1)">Amarillo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/azul-claro.png',1)">Azul Claro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/azul.png',1)">Azul</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/blanco.png',1)">Blanco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/gris.png',1)">Gris</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/lima.png',1)">Lima</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/marron.png',1)">Marrón</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/morado.png',1)">Morado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/naranja.png',1)">Naranja</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/negro.png',1)">Negro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/rojo.png',1)">Rojo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/rosa.png',1)">Rosa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('horquillasportnegro','','imagenes/horquilla/sport/verde.png',1)">Verde</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Rueda</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>Delantera</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span>40 mm</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/amarillo.png',1)">Amarillo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/azul-claro.png',1)">Azul Claro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/azul.png',1)">Azul</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/blanco.png',1)">Blanco</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/dorado.png',1)">Dorado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/gris.png',1)">Gris</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/lima.png',1)">Lima</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/naranja.png',1)">Naranja</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/marron.png',1)">Marrón</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/morado.png',1)">Morado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/negro.png',1)">Negro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/rojo.png',1)">Rojo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/rosa.png',1)">Rosa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/40/verde.png',1)">Verde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>20 mm</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/amarillo.png',1)">Amarillo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/azul-claro.png',1)">Azul Claro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/azul.png',1)">Azul</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/blanco.png',1)">Blanco</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/dorado.png',1)">Dorado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/gris.png',1)">Gris</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/lima.png',1)">Lima</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/naranja.png',1)">Naranja</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/marron.png',1)">Marrón</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/morado.png',1)">Morado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/negro.png',1)">Negro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/rojo.png',1)">Rojo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/rosa.png',1)">Rosa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedadelnegra','','imagenes/rueda-delantera/20/verde.png',1)">Verde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Trasera</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span>40 mm</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/amarillo.png',1)">Amarillo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/azul-claro.png',1)">Azul Claro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/azul.png',1)">Azul</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/blanco.png',1)">Blanco</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/dorado.png',1)">Dorado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/gris.png',1)">Gris</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/lima.png',1)">Lima</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/naranja.png',1)">Naranja</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/marron.png',1)">Marrón</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/morado.png',1)">Morado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/negro.png',1)">Negro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/rojo.png',1)">Rojo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/rosa.png',1)">Rosa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/40/verde.png',1)">Verde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>20 mm</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/amarillo.png',1)">Amarillo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/azul-claro.png',1)">Azul Claro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/azul.png',1)">Azul</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/blanco.png',1)">Blanco</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/dorado.png',1)">Dorado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/gris.png',1)">Gris</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/lima.png',1)">Lima</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/naranja.png',1)">Naranja</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/marron.png',1)">Marrón</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/morado.png',1)">Morado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/negro.png',1)">Negro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/rojo.png',1)">Rojo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/rosa.png',1)">Rosa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('ruedatrasnegra','','imagenes/rueda-trasera/20/verde.png',1)">Verde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Cubierta</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Delantera</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/amarillo.png',1)">Amarillo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/azul.png',1)">Azul</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/blanco.png',1)">Blanco</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/clasica.png',1)">Clásica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/gris.png',1)">Gris</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/lima.png',1)">Lima</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/naranja.png',1)">Naranja</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/marron.png',1)">Marrón</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/morado.png',1)">Morado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/negro.png',1)">Negro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/rojo.png',1)">Rojo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticodelanteronegro','','imagenes/neumatico-delantero/verde.png',1)">Verde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Trasera</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/amarillo.png',1)">Amarillo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/azul.png',1)">Azul</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/blanco.png',1)">Blanco</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/clasica.png',1)">Clásica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/gris.png',1)">Gris</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/lima.png',1)">Lima</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/naranja.png',1)">Naranja</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/marron.png',1)">Marrón</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/morado.png',1)">Morado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/negro.png',1)">Negro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/rojo.png',1)">Rojo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" onclick="mostrarImagen('neumaticotraseronegro','','imagenes/neumatico-trasero/verde.png',1)">Verde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Manillar</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>Pista</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/amarillo.png',1)">Amarillo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/azul-claro.png',1)">Azul Claro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/azul.png',1)">Azul</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/blanco.png',1)">Blanco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/gris.png',1)">Gris</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/lima.png',1)">Lima</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/marron.png',1)">Marrón</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/morado.png',1)">Morado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/naranja.png',1)">Naranja</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/negro.png',1)">Negro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/rojo.png',1)">Rojo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/rosa.png',1)">Rosa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/pista/verde.png',1)">Verde</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Contrarreloj</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/amarillo.png',1)">Amarillo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/azul-claro.png',1)">Azul Claro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/azul.png',1)">Azul</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/blanco.png',1)">Blanco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/gris.png',1)">Gris</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/lima.png',1)">Lima</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/marron.png',1)">Marrón</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/morado.png',1)">Morado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/naranja.png',1)">Naranja</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/negro.png',1)">Negro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/rojo.png',1)">Rojo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/rosa.png',1)">Rosa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/contrarreloj/verde.png',1)">Verde</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Doble Altura</span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/amarillo.png',1)">Amarillo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/azul-claro.png',1)">Azul Claro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/azul.png',1)">Azul</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/blanco.png',1)">Blanco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/gris.png',1)">Gris</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/lima.png',1)">Lima</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/marron.png',1)">Marrón</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/morado.png',1)">Morado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/naranja.png',1)">Naranja</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/negro.png',1)">Negro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/rojo.png',1)">Rojo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/rosa.png',1)">Rosa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="mostrarImagen('manillarpistanegro','','imagenes/manillar/doble-altura/verde.png',1)">Verde</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Espija</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('potencianegro','','imagenes/potencia/gris.png',1)">Cromada</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('potencianegro','','imagenes/potencia/negro.png',1)">Negro</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Sillín</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('sillinnegro','','imagenes/sillin/blanco.png',1)">Blanco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('sillinnegro','','imagenes/sillin/negro.png',1)">Negro</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Poste</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/azul.png',1)">Azul</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/rojo.png',1)">Rojo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/naranja.png',1)">Naranja</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/verde.png',1)">Verde</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/blanco.png',1)">Blanco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/dorado.png',1)">Dorado</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/morado.png',1)">Morado</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/negro.png',1)">Negro</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('tijanegro','','imagenes/tija/cromado.png',1)">Cromado</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Plato</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/azul.png',1)">Azul</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/marron.png',1)">Marrón</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/amarillo.png',1)">Amarillo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/rojo.png',1)">Rojo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/naranja.png',1)">Naranja</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/blanco.png',1)">Blanco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/rosa.png',1)">Rosa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/negro.png',1)">Negro</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/cromado.png',1)">Cromado</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('platonegro','','imagenes/plato/lima.png',1)">Lima</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Brazo Biela</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/azul.png',1)">Azul</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/marron.png',1)">Marrón</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/amarillo.png',1)">Amarillo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/rojo.png',1)">Rojo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/naranja.png',1)">Naranja</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/blanco.png',1)">Blanco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/rosa.png',1)">Rosa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/negro.png',1)">Negro</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/cromado.png',1)">Cromado</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('bielanegro','','imagenes/biela/lima.png',1)">Lima</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Cadena</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/amarillo.png',1)">Amarillo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/azul.png',1)">Azul</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/azul-claro.png',1)">Azul Claro</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/blanco.png',1)">Blanco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/cromado.png',1)">Cromado</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/lima.png',1)">Lima</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/marron.png',1)">Marrón</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/morado.png',1)">Morado</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/naranja.png',1)">Naranja</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/negro.png',1)">Negro</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/rojo.png',1)">Rojo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/rosa.png',1)">Rosa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('cadenanegra','','imagenes/cadena/verde.png',1)">Verde</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topmenu">
+                                <a href="#" style="width:110px;">
+                                    <span>Lenticular</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('lenticularnegra','','imagenes/lenticular/sin.png',1)">Sin Lenticular</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('lenticularnegra','','imagenes/lenticular/azul.png',1)">Azul</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('lenticularnegra','','imagenes/lenticular/negro.png',1)">Negro</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('lenticularnegra','','imagenes/lenticular/blanco.png',1)">Blanco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="mostrarImagen('lenticularnegra','','imagenes/lenticular/rojo.png',1)">Rojo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="toplast">
+                                <a style='cursor: pointer;' onclick="printContents('Fixed')">
+                                    <span>Imprimir</span>
+                                </a>
+                            </li>
+                            <li class="toplast">
+                                <a style='cursor: pointer;' onclick="printimagen()">
+                                    <span>Guardar</span>
+                                </a>
+                                
+                            </li>
+                            <li class="toplast">
+                                <a style='cursor: pointer;' onclick="muestra_oculta('menu')">
+                                    <span>Ocultar menú</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-mostrar" id="menu-mostrar">
+                        <ul id="css3menu1" class="topmenu">
+                            <li class="topfirst">
+                                <a style='cursor: pointer;' onclick="muestra_oculta('menu')">
+                                    <span>Mostrar Menú</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <script>
+function printContents(e)
+{
+    var res     = document.body.innerHTML;
+    var printC  = document.getElementById(e).innerHTML;
+    document.body.innerHTML = printC ;
+    window.print();
+    document.body.innerHTML = res ;
+}
+
+function printimagen()
+{    var res     = document.body.innerHTML;
+     var printC  = document.getElementById("#Fixed").innerHTML;
+    document.body.innerHTML = printC ;
+    
+    
+    
+    
+ html2canvas( document.body, {
+            onrendered: function(canvas) {
+                theCanvas = canvas;
+                document.body.appendChild(canvas);
+
+                // Convert and download as image 
+                Canvas2Image.saveAsPNG(canvas); 
+                $("#img-out").append(canvas);
+                // Clean up 
+                //document.body.removeChild(canvas);
+            }
+        });
+ document.body.innerHTML = res ;
+    }
+
+    </script>
+             
+                </body>
+            </html>
