@@ -1,0 +1,51 @@
+.titulo-acerca
+	display inline-block
+	margin 0 auto
+.tituloVerde
+	color #50bf94
+	text-align center
+	padding 40px 0
+	font-size 36px
+	font-weight: 800;
+	line-height: 1.3em;
+	
+.tituloVerde:before
+	height: 16px;
+	margin-right 40px
+	content:url(../images/decoIzquierda.png)
+	
+.tituloVerde:after
+	height: 16px;
+	margin-left 40px
+	content:url(../images/decoDerecha.png)
+
+.acerca-Datos {
+	position: relative;
+	margin-bottom: 40px;
+	padding: 40px
+	background-color: #d4e6e9;
+}.acerca-Datos
+.acerca-Datos:last-child {
+	margin-bottom: 0;
+}
+.acerca-Datos:before,.acerca-Datos:after {
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	right: 0;
+	content: "";
+}
+.acerca-Datos:before {
+	border-top: solid 20px #fff;
+	border-right: solid 20px #fff;
+	border-left: solid 20px transparent;
+	border-bottom: solid 20px transparent;
+}
+.acerca-Datos:after {
+	border-bottom: solid 20px #8fdae6;
+	border-left: solid 20px #8fdae6;
+	border-right: solid 20px transparent;
+	border-top: solid 20px transparent;
+}

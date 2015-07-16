@@ -1,0 +1,215 @@
+.bar-Portafolio
+	display none
+/* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
+.Potafafolio-item {
+	position: relative;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.Potafafolio-item figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 5%;
+	width: 90%;
+	height: auto;
+	background: #f2f2f2;
+	text-align: center;
+	cursor: pointer;
+}
+
+.Potafafolio-item figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.3;
+}
+
+.Potafafolio-item figure figcaption {
+	padding: 2em;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	box-shadow: 0px 10px 38px 5px rgba(0,0,0,0.75);
+}
+
+.Potafafolio-item figure figcaption::before,
+.Potafafolio-item figure figcaption::after {
+	pointer-events: none;
+}
+
+.Potafafolio-item figure figcaption,
+.Potafafolio-item figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.Potafafolio-item figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.Potafafolio-item figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.Potafafolio-item figure h2 span {
+	font-weight: 800;
+}
+
+.Potafafolio-item figure h2,
+.Potafafolio-item figure p {
+	margin: 0;
+}
+
+.Potafafolio-item figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*-----------------*/
+/***** Hera *****/
+/*-----------------*/
+
+figure.effect-hera {
+	background: #bababa;
+}
+
+figure.effect-hera h2 {
+	font-size: 158.75%;
+}
+
+figure.effect-hera h2,
+figure.effect-hera p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+}
+
+figure.effect-hera figcaption::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #22b5f6;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+}
+
+figure.effect-hera p {
+	width: 100px;
+	text-transform: none;
+	font-size: 121%;
+	line-height: 2;
+}
+
+figure.effect-hera p a {
+	color: #f70562;
+}
+
+figure.effect-hera p a:hover,
+figure.effect-hera p a:focus {
+	transform scale(2,2)
+	opacity: 0.6;
+}
+
+figure.effect-hera p a i {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-hera p a:first-child i {
+	-webkit-transform: translate3d(-60px,-60px,0);
+	transform: translate3d(-60px,-60px,0);
+}
+
+figure.effect-hera p a:nth-child(2) i {
+	-webkit-transform: translate3d(60px,-60px,0);
+	transform: translate3d(60px,-60px,0);
+}
+
+figure.effect-hera p a:nth-child(3) i {
+	-webkit-transform: translate3d(-60px,60px,0);
+	transform: translate3d(-60px,60px,0);
+}
+
+figure.effect-hera p a:nth-child(4) i {
+	-webkit-transform: translate3d(60px,60px,0);
+	transform: translate3d(60px,60px,0);
+}
+
+figure.effect-hera:hover figcaption::before {
+	opacity: 1;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+}
+
+figure.effect-hera:hover h2 {
+	opacity: 0;
+	-webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+	transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+figure.effect-hera:hover p i:empty {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0); /* just because it's stronger than nth-child */
+	opacity: 1;
+}
+//* Menu*//
+
+.Portafolio-menu
+	text-align center
+.Portafolio-menuItem
+	font-size 18px
+	color #5c5857
+	margin 0 20px
+	padding 5px 10px
+	border 3px solid #51af71
+	text-decoration none
+	
+.Portafolio-menuItem:hover
+	
+	font-size 18px
+	color #fff
+	background-color #97f7c3
+	margin 0 20px
+	padding 5px 10px
+	border 3px solid #51af71
+	text-decoration none
+.Portafolio-menuItem:active
+	font-size 18px
+	color #fff
+	background-color #97f7c3
+	margin 0 20px
+	padding 5px 10px
+	border 3px solid #51af71
+	text-decoration none

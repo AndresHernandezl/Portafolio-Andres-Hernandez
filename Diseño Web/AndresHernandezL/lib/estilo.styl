@@ -10,5 +10,86 @@
     font-style: normal;
 
 }
+.activate
+	border-bottom: 3px solid #F6224A;
+	//background-color #cbcbcb
+	color #F6224A
 
 @import ("Header/styles.styl")
+@import ("Acercade/styles.styl")
+@import ("Frases/styles.styl")
+@import ("Perfil/styles.styl")
+@import ("Habilidade/styles.styl")
+@import ("Estudios/styles.styl")
+@import ("Portafolio/styles.styl")
+@import ("Contacto/styles.styl")
+	
+.acerca,.Perfil,.Habilidades,.Estudios,.Contacto 
+	padding 60px 0
+
+
+
+::-webkit-scrollbar{
+  width: 5px;
+  background: #dbe8ec;
+}
+::-webkit-scrollbar-button{
+  width:0px;
+  height: 0px;
+}
+::-webkit-scrollbar-track{
+  background:#3c454e;
+  border:thin solid #1a1f25;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(top, #F6224A, #F6224A);
+  border:thin solid #232c34;
+ }
+::-webkit-scrollbar-thumb:hover{
+    background: -webkit-linear-gradient(top, #aa1732, #b51332);
+}
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77,161,112,.6);
+}
+@media screen and (max-width: 992px)
+	.tituloVerde:before
+		height: 16px;
+		margin-right 10px
+		content:url(../images/decoIzquierda-Tablet.png)
+	.tituloVerde:after
+		height: 16px;
+		margin-left 10px
+		content:url(../images/decoDerecha-Tablet.png)
+	.tituloRojo:before
+		height: 16px;
+		margin-right 10px
+		content:url(../images/decoIzquierdaR-Tablet.png)
+	.tituloRojo:after
+		height: 16px;
+		margin-left 10px
+		content:url(../images/decoDerechaR-Tablet.png)
+@media screen and (max-width: 508px)
+	
+	.tituloVerde:before
+		height: 16px;
+		margin-right 0px
+		content:url(../images/decoIzquierda.png)
+	.tituloVerde:after
+		content:url(../images/decoDerecha.png)
+		height: 16px;
+		margin-left 0px	
+	.tituloRojo:before
+		height: 16px;
+		margin-right 0px
+		content:url(../images/decoIzquierdaR.png)
+	.tituloRojo:after
+		content:url(../images/decoDerechaR.png)
+		height: 16px;
+		margin-left 0px
+@media screen and (max-width: 614px)
+	.tituloVerde:before
+		height: 16px;
+		margin-right 0px
+		content:url(../images/decoIzquierda.png)

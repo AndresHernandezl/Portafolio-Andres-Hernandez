@@ -1,0 +1,158 @@
+@keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+.scroll {
+	background-color: #dddddd;
+	background-image: url(../img/fondo-Contact.svg);
+	background-position: center center;
+	background-size: 500px;
+	-webkit-animation: scrollBad 5s linear infinite;
+	animation: scrollBad 5s linear infinite;
+  }
+
+.Contacto
+	overflow: hidden;
+	position: relative;
+.titulo-Contact
+	display inline-block
+	margin 0 auto
+	z-index: 1;
+.tituloRojo
+	color #f6224a
+	text-align center
+	padding 40px 0
+	font-size 36px
+	
+.tituloRojo:before
+	width: 25%;
+	height: 16px;
+	margin-right 40px
+	content:url(../images/decoIzquierdaR.png)
+	
+.tituloRojo:after
+	width: 25%;
+	height: 16px;
+	margin-left 40px
+	content:url(../images/decoDerechaR.png)
+.Contacto-content
+	text-align: center;
+.Contacto-info
+	font-size 30px
+	color #605e5e
+.Contacto-email
+	font-size 26px
+	color #26c4f1
+.Contacto-phone
+	font-size 20px
+	color #26c4f1
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 4px;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.icon-cube {
+  position: relative;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  overflow: visible;
+}
+
+.icon-cube::before,
+.icon-cube::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/icons5.png");
+  //background-image: url("../img/icons5.svg"), none;
+  content: "";
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.icon-cube::before {
+  z-index: 2;
+  background-color: #595959;
+}
+
+.icon-cube::after {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translateY(48px) rotateX(-90deg);
+          transform: translateY(48px) rotateX(-90deg);
+}
+
+.icon-cube:hover::before {
+  opacity: 0;
+  -webkit-transform: translateY(-48px) rotateX(90deg);
+          transform: translateY(-48px) rotateX(90deg);
+}
+
+.icon-cube:hover::after {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+
+/* facebook */
+.icon-cube.facebook::before,
+.icon-cube.facebook::after {
+  background-position: 0 0;
+}
+
+.icon-cube.facebook::after {
+  background-color: #3b5998;
+}
+
+/* twitter */
+.icon-cube.twitter::before,
+.icon-cube.twitter::after {
+  background-position: -96px 0;
+}
+
+.icon-cube.twitter::after {
+  background-color: #4099ff;
+}
+
+/* google plus */
+.icon-cube.googleplus::before,
+.icon-cube.googleplus::after {
+  background-position: -192px 0;
+}
+
+.icon-cube.googleplus::after {
+  background-color: #d34836;
+}
+
+/* github */
+.icon-cube.github::before,
+.icon-cube.github::after {
+  background-position: -288px 0;
+}
+
+.icon-cube.github::after {
+  background-color: #333333;
+}
+
+/* rss */
+.icon-cube.linkedin::before,
+.icon-cube.linkedin::after {
+  background-position: -384px 0;
+}
+
+.icon-cube.linkedin::after {
+  background-color: #1079f2;
+}
